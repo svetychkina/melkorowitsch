@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.conscience.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Абитуриент ННГАСУ"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ContactsActivity" />
+        <activity android:name=".How_To_Activity" />
+        <activity android:name=".WhereActivity" />
+        <activity android:name=".BachelorActivity" />
+        <activity android:name=".RangeFormActivity" />
+        <activity android:name=".RateActivity" />
+        <activity android:name=".WebActivity"></activity>
+    </application>
+
+</manifest>
