@@ -61,9 +61,6 @@
         <item name="bachelor">Бакалавр/специалист</item>
         <item name="magistracy">Магистратура</item>
         <item name="postgraduate">Аспирантура</item>
-        <item name="extramural">Заочное обучение</item>
-        <item name="foreign">Приём иностранных граждан</item>
-        <item name="training">Повышение квалификации</item>
     </string-array>
 
     <string-array name="bachelor">
@@ -89,23 +86,37 @@
     </string-array>
 
     <string-array name="magistracy">
-        <item name=""></item>
+        <item name="05.04.06">Экология и природопользование</item>
+        <item name="07.04.01">Архитектура</item>
+        <item name="07.04.02">Реконструкция и реставрация архитектурного наследия</item>
+        <item name="07.04.03">Дизайн архитектурной среды</item>
+        <item name="08.04.01">Строительство</item>
+        <item name="09.04.02">Информационные системы и технологии</item>
+        <item name="09.04.03">Прикладная информатика</item>
+        <item name="13.04.01">Теплоэнергетика и теплотехника</item>
+        <item name="20.04.01">Техносферная безопасность</item>
+        <item name="21.04.02">Землеустройство и кадастры</item>
+        <item name="27.04.01">Стандартизация и метрология</item>
+        <item name="35.04.10">Ландшафтная архитектура</item>
+        <item name="38.04.01">Экономика</item>
+        <item name="38.04.02">Менеджмент</item>
+        <item name="38.04.08">Финансы и кредит</item>
+        <item name="40.04.01">Юриспруденция</item>
+        <item name="51.04.01">Культурология</item>
+        <item name="54.04.01">Дизайн</item>
     </string-array>
 
     <string-array name="postgraduate">
-        <item name=""></item>
-    </string-array>
-
-    <string-array name="extramural">
-        <item name=""></item>
-    </string-array>
-
-    <string-array name="foreign">
-        <item name=""></item>
-    </string-array>
-
-    <string-array name="training">
-        <item name=""></item>
+        <item name="07.06.01">Архитектура</item>
+        <item name="08.06.01">Техника и технологии строительства</item>
+        <item name="09.06.01">Информатика и вычислительная техника</item>
+        <item name="37.06.01">Психологические науки</item>
+        <item name="38.06.01">Экономика</item>
+        <item name="44.06.01">Образование и педагогические науки</item>
+        <item name="46.06.01">Исторические науки и археология</item>
+        <item name="47.06.01">Философия, этика и религиоведение</item>
+        <item name="51.06.01">Культурология</item>
+        <item name="27.06.01">Управление в технических системах</item>
     </string-array>
 
 </resources>
