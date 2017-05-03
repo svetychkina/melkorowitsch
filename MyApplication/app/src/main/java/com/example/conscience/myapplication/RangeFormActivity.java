@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 //import static com.example.conscience.myapplication.R.id.specSpinner;
@@ -21,6 +22,7 @@ public class RangeFormActivity extends AppCompatActivity {
 
         final Spinner progSpinner = (Spinner)findViewById(R.id.progSpinner);
         final Spinner specSpinner = (Spinner)findViewById(R.id.specSpinner);
+
 
         ArrayAdapter<?> adapter = ArrayAdapter.createFromResource(this, R.array.programs, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -51,13 +53,10 @@ public class RangeFormActivity extends AppCompatActivity {
 
             public void onNothingSelected(AdapterView<?> parent){}
             });
+
+        //String specSelected = specSpinner.getSelectedItem().toString();
+        //outSpecTextView.setText(specSelected);
         }
 
 
-
-
-    public void onClickRate(View view) {
-        Intent intent = new Intent(RangeFormActivity.this, RateActivity.class);
-        startActivity(intent);
-    }
 }

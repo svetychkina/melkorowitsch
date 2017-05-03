@@ -29,4 +29,22 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!--Application theme-->
+    <style name="AppTheme.Spin" parent="AppTheme">
+        <!--for the resting Spinner style-->
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+        <!--for each individual Spinner list item once clicked on-->
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+    </style>
+
+    <style name="spinnerItemStyle">
+        <item name="android:padding">60dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+        <item name="android:padding">40dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:dropDownHeight">40dp</item>
+    </style>
 </resources>

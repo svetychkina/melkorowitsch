@@ -21,8 +21,7 @@
         <activity android:name=".WhereActivity" />
         <activity android:name=".BachelorActivity" />
         <activity android:name=".RangeFormActivity" />
-        <activity android:name=".RateActivity" />
-        <activity android:name=".WebActivity"></activity>
+        <activity android:name=".WebActivity" />
     </application>
 
 </manifest>

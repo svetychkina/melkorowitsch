@@ -16,133 +16,171 @@
         android:theme="?attr/actionBarTheme"
         app:title="Мы в сети" />
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-        <ImageButton
-            android:id="@+id/imageButtonVK"
-            style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="55dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="34dp"
-            android:backgroundTint="@color/colorAccent"
-            android:onClick="OnClickVK"
-            android:tint="@android:color/background_light"
-            app:srcCompat="@drawable/vk"
-            tools:layout_editor_absoluteX="46dp"
-            tools:layout_editor_absoluteY="40dp" />
-
-        <TextView
-            android:id="@+id/textViewVK"
-            android:layout_width="165dp"
-            android:layout_height="26dp"
-            android:layout_marginLeft="-3dp"
-            android:fontFamily="serif"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
             android:gravity="center"
-            android:text="Мы вконтакте"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:typeface="serif"
+            android:orientation="vertical">
 
-            app:layout_constraintLeft_toRightOf="@+id/imageButtonVK"
-            tools:layout_editor_absoluteY="56dp" />
+            <ImageButton
+                android:id="@+id/imageButtonVK"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorAccent"
+                app:srcCompat="@drawable/vk" />
 
-        <ImageButton
-            android:id="@+id/imageButtonFB"
-            style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="55dp"
-            android:layout_height="60dp"
-            android:layout_alignStart="@+id/imageButtonVK"
-            android:layout_below="@+id/imageButtonVK"
-            android:layout_column="0"
-            android:layout_row="2"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:onClick="OnClickFB"
-            android:tint="@android:color/background_light"
-            app:srcCompat="@drawable/fb"
-            tools:layout_editor_absoluteY="136dp"
-            tools:layout_editor_absoluteX="46dp" />
+            <TextView
+                android:id="@+id/textViewVK"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-3dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Мы вконтакте"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
 
-        <TextView
-            android:id="@+id/textViewFB"
-            android:layout_width="165dp"
-            android:layout_height="26dp"
-            android:layout_marginLeft="-3dp"
-            android:fontFamily="serif"
+                android:typeface="serif"
+                app:layout_constraintLeft_toRightOf="@+id/imageButtonVK"
+                tools:layout_editor_absoluteY="56dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
             android:gravity="center"
-            android:text="Мы на facebook"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:typeface="serif"
-            app:layout_constraintLeft_toRightOf="@+id/imageButtonFB"
-            tools:layout_editor_absoluteY="152dp" />
+            android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageButtonTwi"
-            style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="55dp"
-            android:layout_height="60dp"
-            android:layout_above="@+id/imageButtonYT"
-            android:layout_alignStart="@+id/imageButtonFB"
-            android:layout_column="0"
-            android:layout_row="2"
-            android:backgroundTint="@android:color/holo_blue_light"
-            android:tint="@android:color/background_light"
-            android:onClick="OnClickTwi"
-            app:srcCompat="@drawable/twitter"
-            tools:layout_editor_absoluteY="231dp"
-            tools:layout_editor_absoluteX="46dp" />
+            <ImageButton
+                android:id="@+id/imageButtonFB"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:layout_alignStart="@+id/imageButtonVK"
+                android:layout_below="@+id/imageButtonVK"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_row="2"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:onClick="OnClickFB"
+                android:tint="@android:color/background_light"
+                app:srcCompat="@drawable/fb"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="136dp" />
 
-        <TextView
-            android:id="@+id/textViewTwi"
-            android:layout_width="165dp"
-            android:layout_height="26dp"
-            android:layout_marginLeft="-3dp"
-            android:fontFamily="serif"
+            <TextView
+                android:id="@+id/textViewFB"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-3dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Мы на facebook"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:typeface="serif"
+                app:layout_constraintLeft_toRightOf="@+id/imageButtonFB"
+                tools:layout_editor_absoluteY="152dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
             android:gravity="center"
-            android:text="Мы в twitter"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:typeface="serif"
-            app:layout_constraintLeft_toRightOf="@+id/imageButtonTwi"
-            tools:layout_editor_absoluteY="247dp" />
+            android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageButtonYT"
-            style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="55dp"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/imageButtonTwi"
-            android:layout_column="0"
-            android:layout_row="6"
-            android:backgroundTint="@android:color/holo_red_dark"
-            android:tint="@android:color/background_light"
-            android:onClick="OnClickYT"
-            app:srcCompat="@drawable/youtube"
-            tools:layout_editor_absoluteY="332dp"
-            tools:layout_editor_absoluteX="46dp" />
+            <ImageButton
+                android:id="@+id/imageButtonTwi"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/imageButtonYT"
+                android:layout_alignStart="@+id/imageButtonFB"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_row="2"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:onClick="OnClickTwi"
+                android:tint="@android:color/background_light"
+                app:srcCompat="@drawable/twitter"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="231dp" />
 
-        <TextView
-            android:id="@+id/textViewYT"
-            android:layout_width="165dp"
-            android:layout_height="26dp"
-            android:layout_marginLeft="-3dp"
-            android:fontFamily="serif"
+            <TextView
+                android:id="@+id/textViewTwi"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-3dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Мы в twitter"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:typeface="serif"
+                app:layout_constraintLeft_toRightOf="@+id/imageButtonTwi"
+                tools:layout_editor_absoluteY="247dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
             android:gravity="center"
-            android:text="Мы на YouTube"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:typeface="serif"
-            app:layout_constraintLeft_toRightOf="@+id/imageButtonYT"
-            tools:layout_editor_absoluteY="349dp" />
-    </android.support.constraint.ConstraintLayout>
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButtonYT"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/imageButtonTwi"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_row="6"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:onClick="OnClickYT"
+                android:tint="@android:color/background_light"
+                app:srcCompat="@drawable/youtube"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="332dp" />
+
+            <TextView
+                android:id="@+id/textViewYT"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-3dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Мы на YouTube"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:typeface="serif"
+                app:layout_constraintLeft_toRightOf="@+id/imageButtonYT"
+                tools:layout_editor_absoluteY="349dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
