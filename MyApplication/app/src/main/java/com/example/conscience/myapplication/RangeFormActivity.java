@@ -1,19 +1,19 @@
 package com.example.conscience.myapplication;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CompoundButton;
 import android.widget.Spinner;
-import android.widget.TextView;
+import android.widget.Switch;
 import android.widget.Toast;
 
 //import static com.example.conscience.myapplication.R.id.specSpinner;
 //import static com.example.conscience.myapplication.R.id.progSpinner;
 
-public class RangeFormActivity extends AppCompatActivity {
+public class RangeFormActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,12 @@ public class RangeFormActivity extends AppCompatActivity {
 
         final Spinner progSpinner = (Spinner)findViewById(R.id.progSpinner);
         final Spinner specSpinner = (Spinner)findViewById(R.id.specSpinner);
+
+        Switch notifSwitch = (Switch)findViewById(R.id.notificationSwitch);
+        if (notifSwitch != null){
+            notifSwitch.setOnCheckedChangeListener(this);
+        }
+
 
 
         ArrayAdapter<?> adapter = ArrayAdapter.createFromResource(this, R.array.programs, android.R.layout.simple_spinner_item);
@@ -59,4 +65,8 @@ public class RangeFormActivity extends AppCompatActivity {
         }
 
 
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        Toast.makeText(this, "Уведомления " + (isChecked ? "включены" : "отключены"), Toast.LENGTH_SHORT).show();
+    }
 }
