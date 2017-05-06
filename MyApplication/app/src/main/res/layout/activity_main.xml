@@ -22,7 +22,6 @@
 
             <Button
                 android:id="@+id/aboutButon"
-                style="@android:style/Widget.Material.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
@@ -31,6 +30,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:onClick="onClickAbout"
                 android:text="@string/about_univ"
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@android:color/background_light"
                 android:textSize="24sp"
@@ -52,6 +52,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:onClick="onClickCont"
                 android:text="@string/contacts"
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@android:color/background_light"
                 android:textSize="24sp" />

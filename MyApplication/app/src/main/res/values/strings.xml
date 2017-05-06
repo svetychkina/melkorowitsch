@@ -42,13 +42,12 @@
     <string name="extram">Заочное обучение</string>
     <string name="foreign">Приём иностранных граждан</string>
     <string name="training">Повышение квалификации</string>
-    <string name="address">ул. Ильинская, 65, корп.1, Нижний Новгород, Нижегородская обл., 603000</string>
-    <string name="prep_phone">8-831-433-95-24</string>
-    <string name="priem">Приёмная комиссия</string>
-    <string name="priem_phone">8-831-280-84-45</string>
-    <string name="worktime">Пн-Пт: 9:00 – 16:00</string>
-    <string name="post">Наша почта</string>
-    <string name="email">priem@nngasu.ru</string>
+    <string name="address">ул. Ильинская, 65, корп.1,\nНижний Новгород,\nНижегородская обл.,\n603000\n\n
+        Подготовительные курсы:\n8-831-433-95-24\n\n
+        Приёмная комиссия:\n8-831-280-84-45\n\n
+        Пн-Пт: 9:00 – 16:00\n\n
+        Наша почта:\npriem@nngasu.ru\n
+    </string>
     <string name="spases_count">Количество мест:</string>
     <string name="sort">Сортировать по:</string>
     <string name="sort_fio">ФИО</string>

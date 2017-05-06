@@ -48,7 +48,8 @@
 
             <Spinner
                 android:id="@+id/progSpinner"
-                style="@style/AppTheme.Spin"
+
+                style="@style/Widget.AppCompat.Spinner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
@@ -100,11 +101,12 @@
 
             <Spinner
                 android:id="@+id/specSpinner"
-                style="@style/AppTheme.Spin"
+
+                style="@style/Widget.AppCompat.Spinner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:spinnerMode="dialog"/>
+                android:spinnerMode="dialog" />
 
         </LinearLayout>
 

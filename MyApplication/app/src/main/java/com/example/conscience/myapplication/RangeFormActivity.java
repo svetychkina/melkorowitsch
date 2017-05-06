@@ -45,24 +45,78 @@ public class RangeFormActivity extends AppCompatActivity implements CompoundButt
                 if (pos == 0){
                     ArrayAdapter<CharSequence> specAdapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.bachelor, android.R.layout.simple_spinner_item);
                     specSpinner.setAdapter(specAdapter);
+
+                    specSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+                        public void onItemSelected(AdapterView<?> parent, View itemSel, int selPos, long posId){
+                            String[] selected = getResources().getStringArray(R.array.bachelor);
+                            Toast toast = Toast.makeText(getApplicationContext(), "choise is "+selected[selPos], Toast.LENGTH_SHORT);
+                            toast.show();
+                        }
+
+                        public void onNothingSelected(AdapterView<?> parent){}
+                    });
+
                 }
                 else if (pos == 1){
                     ArrayAdapter<CharSequence> specAdapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.magistracy, android.R.layout.simple_spinner_item);
                     specSpinner.setAdapter(specAdapter);
+
+                    specSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+                        public void onItemSelected(AdapterView<?> parent, View itemSel, int selPos, long posId){
+                            String[] selected = getResources().getStringArray(R.array.magistracy);
+                            Toast toast = Toast.makeText(getApplicationContext(), "choise is "+selected[selPos], Toast.LENGTH_SHORT);
+                            toast.show();
+                        }
+
+                        public void onNothingSelected(AdapterView<?> parent){}
+                    });
+
                 }
                 else if (pos == 2){
                     ArrayAdapter<CharSequence> specAdapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.postgraduate, android.R.layout.simple_spinner_item);
                     specSpinner.setAdapter(specAdapter);
+
+                    specSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+                        public void onItemSelected(AdapterView<?> parent, View itemSel, int selPos, long posId){
+                            String[] selected = getResources().getStringArray(R.array.postgraduate);
+                            Toast toast = Toast.makeText(getApplicationContext(), "choise is "+selected[selPos], Toast.LENGTH_SHORT);
+                            toast.show();
+                        }
+
+                        public void onNothingSelected(AdapterView<?> parent){}
+                    });
+
                 }
 
+                                //Spinner spinner = (Spinner)findViewById(R.id.specSpinner);
+                //String selected = spinner.getSelectedItem().toString();
+                //Toast.makeText(getApplicationContext(), selected, Toast.LENGTH_SHORT).show();
+
             }
+
+
 
             public void onNothingSelected(AdapterView<?> parent){}
             });
 
+        /*specSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            public void onItemSelected(AdapterView<?> parent, View itemSel, int selPos, long posId){
+                String[] selected = getResources().getStringArray(R.array.bachelor);
+                Toast toast = Toast.makeText(getApplicationContext(), "choise is "+selected[selPos], Toast.LENGTH_SHORT);
+                toast.show();
+            }
+
+            public void onNothingSelected(AdapterView<?> parent){}
+        });*/
+
+
+            }
+
+
+
         //String specSelected = specSpinner.getSelectedItem().toString();
         //outSpecTextView.setText(specSelected);
-        }
+
 
 
     @Override
