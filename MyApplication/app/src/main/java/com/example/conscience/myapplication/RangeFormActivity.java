@@ -53,14 +53,21 @@ public class RangeFormActivity extends AppCompatActivity implements CompoundButt
                     ArrayAdapter<CharSequence> specAdapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.bachelor, android.R.layout.simple_spinner_item);
                     specAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
+<<<<<<< HEAD
                     //ArrayAdapter<String> specAdapter = new ArrayAdapter<String>(RangeFormActivity.this,R.layout.row,R.id.selspec,specbach);
+=======
+                    //ArrayAdapter<String> specAdapter = new ArrayAdapter<String>(this, R.layout.row, R.id.selspec, specbach);
+>>>>>>> master
 
                     specSpinner.setAdapter(specAdapter);
 
                     specSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
                         public void onItemSelected(AdapterView<?> parent, View itemSel, int selPos, long posId){
                             String[] selected = getResources().getStringArray(R.array.bachelor);
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
                             Toast toast = Toast.makeText(getApplicationContext(), "Вы выбрали "+selected[selPos], Toast.LENGTH_SHORT);
                             toast.show();
                         }
