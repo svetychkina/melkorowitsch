@@ -15,6 +15,10 @@ import android.widget.Toast;
 
 public class RangeFormActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener{
 
+    /*String[] specbach = getResources().getStringArray(R.array.bachelor);
+    String[] specmag = getResources().getStringArray(R.array.magistracy);
+    String[] specpostgrad = getResources().getStringArray(R.array.postgraduate);*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,47 +48,58 @@ public class RangeFormActivity extends AppCompatActivity implements CompoundButt
                 parent.getItemAtPosition(pos);
                 if (pos == 0){
                     ArrayAdapter<CharSequence> specAdapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.bachelor, android.R.layout.simple_spinner_item);
+                    specAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+                    //ArrayAdapter<String> specAdapter = new ArrayAdapter<String>(this, R.layout.row, R.id.selspec, specbach);
+
                     specSpinner.setAdapter(specAdapter);
 
                     specSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
                         public void onItemSelected(AdapterView<?> parent, View itemSel, int selPos, long posId){
                             String[] selected = getResources().getStringArray(R.array.bachelor);
-                            Toast toast = Toast.makeText(getApplicationContext(), "choise is "+selected[selPos], Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(getApplicationContext(), "Вы выбрали "+selected[selPos], Toast.LENGTH_SHORT);
                             toast.show();
                         }
 
                         public void onNothingSelected(AdapterView<?> parent){}
                     });
+                    specAdapter.notifyDataSetChanged();
 
                 }
                 else if (pos == 1){
                     ArrayAdapter<CharSequence> specAdapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.magistracy, android.R.layout.simple_spinner_item);
+                    specAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                     specSpinner.setAdapter(specAdapter);
 
                     specSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
                         public void onItemSelected(AdapterView<?> parent, View itemSel, int selPos, long posId){
                             String[] selected = getResources().getStringArray(R.array.magistracy);
-                            Toast toast = Toast.makeText(getApplicationContext(), "choise is "+selected[selPos], Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(getApplicationContext(), "Вы выбрали "+selected[selPos], Toast.LENGTH_SHORT);
                             toast.show();
                         }
 
                         public void onNothingSelected(AdapterView<?> parent){}
                     });
+                    specAdapter.notifyDataSetChanged();
+
 
                 }
                 else if (pos == 2){
                     ArrayAdapter<CharSequence> specAdapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.postgraduate, android.R.layout.simple_spinner_item);
+                    specAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                     specSpinner.setAdapter(specAdapter);
 
                     specSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
                         public void onItemSelected(AdapterView<?> parent, View itemSel, int selPos, long posId){
                             String[] selected = getResources().getStringArray(R.array.postgraduate);
-                            Toast toast = Toast.makeText(getApplicationContext(), "choise is "+selected[selPos], Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(getApplicationContext(), "Вы выбрали "+selected[selPos], Toast.LENGTH_SHORT);
                             toast.show();
                         }
 
                         public void onNothingSelected(AdapterView<?> parent){}
                     });
+                    specAdapter.notifyDataSetChanged();
+
 
                 }
 

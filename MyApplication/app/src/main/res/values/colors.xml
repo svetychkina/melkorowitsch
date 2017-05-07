@@ -4,9 +4,10 @@
     <color name="colorPrimaryDark">#172266</color>
     <color name="colorAccent">#6394f7</color>
 
-    <color name="black_overlay">#000000</color>
+    <color name="black">#000000</color>
     <color name="tap_button">#47000000</color>
     <color name="contacts_button">#ffeb3b</color>
     <color name="range_button">#1de9b6</color>
     <color name="univ">#ef8309</color>
+
 </resources>
