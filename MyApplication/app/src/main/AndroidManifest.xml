@@ -20,7 +20,7 @@
         <activity android:name=".How_To_Activity" />
         <activity android:name=".WhereActivity" />
         <activity android:name=".BachelorActivity" />
-        <activity android:name=".RangeFormActivity" />
+        <activity android:name=".RangeFormActivity" android:launchMode="singleTop"/>
         <activity android:name=".WebActivity" />
 
         <service android:name=".MyFirebaseMessagingService">
