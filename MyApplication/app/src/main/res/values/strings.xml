@@ -60,5 +60,9 @@
 
     <string name="warning">Напоминание</string>
     <string name="check">Проверьте Ваш рейтинг</string>
+    <string name="version">Абитуриент ННГАСУ 1.0</string>
+    <string name="phone_icon">phone_icon</string>
+    <string name="title_activity_faculties">FacultiesActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
 </resources>

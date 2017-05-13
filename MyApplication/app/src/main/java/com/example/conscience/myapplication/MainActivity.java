@@ -43,4 +43,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, WebActivity.class);
         startActivity(intent);
     }
+
+    public void onClickApp(View view) {
+        Intent intent = new Intent(MainActivity.this, AboutAppActivity.class);
+        startActivity(intent);
+    }
 }

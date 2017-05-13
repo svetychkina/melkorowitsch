@@ -187,6 +187,7 @@
                 android:layout_centerVertical="true"
                 android:background="@android:color/darker_gray"
                 android:fontFamily="sans-serif-condensed"
+                android:onClick="onClickApp"
                 android:text="@string/about_app"
                 android:textAllCaps="false"
                 android:textColor="@android:color/background_light"

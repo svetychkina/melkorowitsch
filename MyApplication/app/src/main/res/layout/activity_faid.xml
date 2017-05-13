@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/faid" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/faidNametextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faidname"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aboutFaidTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faidText"
+                android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+            <TextView
+                android:id="@+id/kaidalovaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/kaidalova"
+                android:text="@string/kaidalova"
+                android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+            <TextView
+                android:id="@+id/progFaidTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/progfaid"
+                android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+            <TextView
+                android:id="@+id/faidEmailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email|phone"
+                android:clickable="true"
+                android:text="@string/faidEmail"
+                android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
