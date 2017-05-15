@@ -143,7 +143,13 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+<<<<<<< HEAD
                     android:layout_weight="1"
+=======
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+>>>>>>> master
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -158,6 +164,7 @@
 
                     <Button
                         android:id="@+id/showButton"
+<<<<<<< HEAD
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -173,17 +180,46 @@
                     <Switch
                         android:id="@+id/notificationSwitch"
 
+=======
+                        style="@android:style/Widget.Material.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginStart="18dp"
+                        android:layout_toEndOf="@+id/imageButton"
+                        android:fontFamily="casual"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="@string/show"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:visibility="visible" />
+
+                    <Switch
+                        android:id="@+id/notificationSwitch"
+
+>>>>>>> master
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="14dp"
                         android:checked="true"
+<<<<<<< HEAD
 
                         android:text="@string/notification" />
 
                 </RelativeLayout>
 
+=======
+
+                        android:text="@string/notification" />
+
+                </RelativeLayout>
+
+>>>>>>> master
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
