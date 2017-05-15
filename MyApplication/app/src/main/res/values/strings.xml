@@ -31,11 +31,11 @@
     <string name="prep">Подготовительные курсы</string>
     <string name="faq">FAQ</string>
     <string name="program">Программа:</string>
-    <string name="spec">Направление:</string>
+    <string name="spec">Выберите направление:</string>
     <string name="form">Форма обучения:</string>
     <string name="extramural">заочная</string>
     <string name="fulltime">очная</string>
-    <string name="show">Показать</string>
+    <string name="show">показать</string>
     <string name="bach">Бакалавриат/специалитет</string>
     <string name="magistr">Магистратура</string>
     <string name="aspir">Аспирантура</string>
@@ -49,9 +49,9 @@
         Наша почта:\npriem@nngasu.ru\n
     </string>
     <string name="spases_count">Количество мест:</string>
-    <string name="sort">Сортировать по:</string>
-    <string name="sort_fio">ФИО</string>
-    <string name="sort_range">баллы ЕГЭ</string>
+    <string name="sort">Ранжировать по:</string>
+    <string name="sort_contract">договорам</string>
+    <string name="sort_ege">баллам ЕГЭ</string>
     <string name="fio_column">ФИО абитуриента</string>
     <string name="range_column">Рейтинг</string>
     <string name="popup">настроить уведомления</string>
@@ -64,5 +64,10 @@
     <string name="phone_icon">phone_icon</string>
     <string name="title_activity_faculties">FacultiesActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="entername">Введите Ваше имя [ФИО]:</string>
+    <string name="sort_agreement">согласиям</string>
+    <string name="your_ege">Балл ЕГЭ</string>
+    <string name="your_range">Общий рейтинг</string>
+    <string name="places_num">количество бюджетных мест:</string>
 
 </resources>
