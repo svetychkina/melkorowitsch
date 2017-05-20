@@ -37,7 +37,8 @@
         <activity android:name=".miepmActivity" />
         <activity android:name=".otfActivity" />
         <activity android:name=".faidActivity" />
-        <activity android:name=".fiesisActivity"></activity>
+        <activity android:name=".fiesisActivity" />
+        <activity android:name=".podgActivity"></activity>
     </application>
 
 </manifest>

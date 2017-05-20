@@ -45,6 +45,7 @@
     <string name="address">ул. Ильинская, 65, корп.1,\nНижний Новгород,\nНижегородская обл.,\n603000\n\n
         Подготовительные курсы:\n8-831-433-95-24\n\n
         Приёмная комиссия:\n8-831-280-84-45\n\n
+        Режим работы:\n
         Пн-Пт: 9:00 – 16:00\n\n
         Наша почта:\npriem@nngasu.ru\n
     </string>
@@ -69,5 +70,6 @@
     <string name="your_ege">Балл ЕГЭ</string>
     <string name="your_range">Общий рейтинг</string>
     <string name="places_num">количество бюджетных мест:</string>
+    <string name="typesofcourses">Виды подготовительных курсов</string>
 
 </resources>

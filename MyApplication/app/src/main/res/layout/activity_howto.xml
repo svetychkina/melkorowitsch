@@ -129,6 +129,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
                         android:gravity="center_vertical"
+                        android:onClick="onClickPrep"
                         android:text="@string/prep"
                         android:textAlignment="viewStart"
                         android:textAllCaps="false"
