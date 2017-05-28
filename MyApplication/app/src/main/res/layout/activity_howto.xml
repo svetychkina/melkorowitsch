@@ -94,6 +94,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
                         android:gravity="center_vertical"
+                        android:onClick="onClickRules"
                         android:text="@string/rules"
                         android:textAlignment="viewStart"
                         android:textAllCaps="false"

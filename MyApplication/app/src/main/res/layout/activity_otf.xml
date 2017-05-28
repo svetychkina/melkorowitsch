@@ -22,51 +22,69 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:weightSum="3">
 
-            <TextView
-                android:id="@+id/otfNametextView"
-                android:layout_width="match_parent"
+            <Space
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/otfname"
-                android:textAlignment="center"
-                android:textAllCaps="true"
+                android:layout_weight="0.1" />
 
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/aboutOtfTextView"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/otfText"
-                android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+                android:layout_weight="2.8"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/konnovTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/konov"
-                android:text="@string/konnov"
-                android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+                <TextView
+                    android:id="@+id/otfNametextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otfname"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
 
-            <TextView
-                android:id="@+id/progOtfTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/progotf"
-                android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/otfEmailTextView"
-                android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/aboutOtfTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otfText"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+                <TextView
+                    android:id="@+id/konnovTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableBottom="@drawable/konov"
+                    android:text="@string/konnov"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+                <TextView
+                    android:id="@+id/progOtfTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/progotf"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+                <TextView
+                    android:id="@+id/otfEmailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email|phone"
+                    android:clickable="true"
+                    android:text="@string/otfEmail"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:autoLink="email|phone"
-                android:clickable="true"
-                android:text="@string/otfEmail"
-                android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+                android:layout_weight="0.1" />
         </LinearLayout>
     </ScrollView>
 

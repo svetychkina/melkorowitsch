@@ -5,9 +5,10 @@
     <color name="colorAccent">#6394f7</color>
 
     <color name="black">#000000</color>
-    <color name="tap_button">#47000000</color>
+    <color name="tap_button">#424242</color>
     <color name="contacts_button">#ffeb3b</color>
     <color name="range_button">#bc0003</color>
     <color name="univ">#ef8309</color>
     <color name="black_overlay">#000000</color>
+    <color name="graygray">#e0e0e0</color>
 </resources>

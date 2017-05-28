@@ -38,7 +38,14 @@
         <activity android:name=".otfActivity" />
         <activity android:name=".faidActivity" />
         <activity android:name=".fiesisActivity" />
-        <activity android:name=".podgActivity"></activity>
+        <activity android:name=".podgActivity" />
+        <activity android:name=".profsActivity" />
+        <activity android:name=".aboutUsActivity" />
+        <activity android:name=".studsActivity" />
+        <activity android:name=".rulesActivity" />
+        <activity android:name=".EGEMinActivity" />
+        <activity android:name=".entriesActivity" />
+        <activity android:name=".docsActivity"></activity>
     </application>
 
 </manifest>

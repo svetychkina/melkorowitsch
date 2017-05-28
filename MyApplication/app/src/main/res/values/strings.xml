@@ -9,8 +9,8 @@
     <string name="num5">5</string>
     <string name="num6">6</string>
     <string name="univ_info">Общая информация</string>
-    <string name="profs">Преподаватели</string>
-    <string name="grads">Выпускники</string>
+    <string name="profs">Руководство ННГАСУ</string>
+    <string name="grads">Студенты ННГАСУ</string>
     <string name="empl">Трудоустройство</string>
     <string name="mag">Магистратура и аспирантура</string>
     <string name="ieup">ИЭУП</string>
@@ -57,7 +57,7 @@
     <string name="range_column">Рейтинг</string>
     <string name="popup">настроить уведомления</string>
     <string name="places">[бюджет|договор]</string>
-    <string name="notification">Уведомлять меня\nоб изменениях</string>
+    <string name="notification">уведомления</string>
 
     <string name="warning">Напоминание</string>
     <string name="check">Проверьте Ваш рейтинг</string>
@@ -71,5 +71,20 @@
     <string name="your_range">Общий рейтинг</string>
     <string name="places_num">количество бюджетных мест:</string>
     <string name="typesofcourses">Виды подготовительных курсов</string>
+    <string name="rus">Русский</string>
+    <string name="math">Математика*</string>
+    <string name="physics">Физика</string>
+    <string name="ege40">40</string>
+    <string name="ege27">27</string>
+    <string name="ege37">37</string>
+    <string name="ege30">30</string>
+    <string name="geo">География</string>
+    <string name="soc">Обществознание</string>
+    <string name="his">История</string>
+    <string name="lit">Литература</string>
+    <string name="ege34">34</string>
+    <string name="ege42">42</string>
+    <string name="ege39">39</string>
+    <string name="ege38">38</string>
 
 </resources>

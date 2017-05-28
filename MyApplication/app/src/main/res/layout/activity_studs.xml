@@ -7,13 +7,13 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar4"
+        android:id="@+id/toolbar8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="@string/ieup" />
+        app:title="@string/grads" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,51 +34,43 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.8"
-                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/ieupNametextView"
+                    android:id="@+id/voroninaTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ieupname"
-                    android:textAlignment="center"
-                    android:textAllCaps="true"
-
+                    android:drawableTop="@drawable/voronina"
+                    android:text="@string/voronina"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/aboutIeupTextView"
+                    android:id="@+id/bobrovaTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/ieuptext"
-                    android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+                    android:drawableTop="@drawable/bobrova"
+                    android:text="@string/bobrova"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/havinTextView"
+                    android:id="@+id/starcevaTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableBottom="@drawable/havin"
-                    android:text="@string/havin"
-                    android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+                    android:drawableTop="@drawable/starceva"
+                    android:text="@string/starceva"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/progIeupTextView"
+                    android:id="@+id/puzanovaTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/progieup"
-                    android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
-
-                <TextView
-                    android:id="@+id/ieupEmailTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autoLink="web|email"
-                    android:clickable="true"
-                    android:text="@string/ieupEmail"
-                    android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+                    android:drawableTop="@drawable/puzanova"
+                    android:text="@string/puzanova"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <Space
@@ -87,5 +79,4 @@
                 android:layout_weight="0.1" />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

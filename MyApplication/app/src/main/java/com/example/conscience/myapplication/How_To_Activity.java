@@ -17,4 +17,9 @@ public class How_To_Activity extends AppCompatActivity {
         Intent intent = new Intent(How_To_Activity.this,podgActivity.class);
         startActivity(intent);
     }
+
+    public void onClickRules(View view) {
+        Intent intent = new Intent(How_To_Activity.this,rulesActivity.class);
+        startActivity(intent);
+    }
 }

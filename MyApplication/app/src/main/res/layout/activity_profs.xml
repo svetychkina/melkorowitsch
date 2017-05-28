@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/profs" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lapshinTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/lapshin"
+                    android:text="@string/lapshin"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/koposovTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/koposov"
+                    android:text="@string/koposov"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/naidenkoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/najdenko"
+                    android:text="@string/naidenko"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/meyerovTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/mejerov"
+                    android:text="@string/meyerov"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lennovTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/lennov"
+                    android:text="@string/lennov"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/demidenkoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/demidenko"
+                    android:text="@string/demidenko"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/filippovTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/filippov"
+                    android:text="@string/filippov"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/krivonogovTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/krivonogov"
+                    android:text="@string/krivonogov"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/fedoseevTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/fedoseev"
+                    android:text="@string/fedoseev"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/akimovTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/akimov"
+                    android:text="@string/akimov"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/denezhkinTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/denezhkin"
+                    android:text="@string/denezhkin"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
