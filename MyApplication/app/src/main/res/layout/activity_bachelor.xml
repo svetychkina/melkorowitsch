@@ -23,235 +23,98 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="horizontal"
+            android:weightSum="3">
 
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                tools:ignore="UselessParent">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
 
-                <TableRow
-                    android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.8"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/otfButton"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:onClick="onClickOtf"
+                    android:text="@string/otf"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
 
-                    android:clickable="false">
-
-                    <TextView
-                        android:id="@+id/numIeupTextView"
-                        android:layout_width="30dp"
-                        android:layout_height="match_parent"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:text="@string/num1"
-                        android:textAlignment="viewEnd"
-                        android:textColor="@android:color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-
-                    <Button
-                        android:id="@+id/ieupButton"
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:onClick="onClickIeup"
-                        android:text="@string/ieup"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="false"
-                        android:textSize="18sp"
-                        android:textStyle="bold|italic"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-
-                </TableRow>
-
-                <TableRow
+                <Button
+                    android:id="@+id/faidButton"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:onClick="onClickFaid"
+                    android:text="@string/faid"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
 
-                    <TextView
-                        android:id="@+id/numIsfTextView"
-                        android:layout_width="30dp"
-                        android:layout_height="match_parent"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:text="@string/num2"
-                        android:textAlignment="viewEnd"
-                        android:textColor="@android:color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-
-                    <Button
-                        android:id="@+id/isfButton"
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:onClick="onClickIsf"
-                        android:text="@string/isf"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="false"
-                        android:textSize="18sp"
-                        android:textStyle="bold|italic"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-                </TableRow>
-
-                <TableRow
+                <Button
+                    android:id="@+id/fiesisButton"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:onClick="onClickFiesis"
+                    android:text="@string/fiesis"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
 
-                    <TextView
-                        android:id="@+id/numMiepmTextView"
-                        android:layout_width="30dp"
-                        android:layout_height="match_parent"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:text="@string/num3"
-                        android:textAlignment="viewEnd"
-                        android:textColor="@android:color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-
-                    <Button
-                        android:id="@+id/miepmButton"
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:onClick="onClickMiepm"
-                        android:text="@string/miepm"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="false"
-                        android:textSize="18sp"
-                        android:textStyle="bold|italic"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-
-                </TableRow>
-
-                <TableRow
+                <Button
+                    android:id="@+id/miepmButton"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:onClick="onClickMiepm"
+                    android:text="@string/miepm"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
 
-                    <TextView
-                        android:id="@+id/numOtfTextView"
-                        android:layout_width="30dp"
-                        android:layout_height="match_parent"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:text="@string/num4"
-                        android:textAlignment="viewEnd"
-                        android:textColor="@android:color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-
-                    <Button
-                        android:id="@+id/otfButton"
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:onClick="onClickOtf"
-                        android:text="@string/otf"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="false"
-                        android:textSize="18sp"
-                        android:textStyle="bold|italic"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-                </TableRow>
-
-                <TableRow
+                <Button
+                    android:id="@+id/isfButton"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:onClick="onClickIsf"
+                    android:text="@string/isf"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
 
-                    <TextView
-                        android:id="@+id/numFaidTextView"
-                        android:layout_width="30dp"
-                        android:layout_height="match_parent"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:text="@string/num5"
-                        android:textAlignment="viewEnd"
-                        android:textColor="@android:color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-
-                    <Button
-                        android:id="@+id/faidButton"
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:onClick="onClickFaid"
-                        android:text="@string/faid"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="false"
-                        android:textSize="18sp"
-                        android:textStyle="bold|italic"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-                </TableRow>
-
-                <TableRow
+                <Button
+                    android:id="@+id/ieupButton"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:onClick="onClickIeup"
+                    android:text="@string/ieup"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </LinearLayout>
 
-                    android:orientation="horizontal">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
 
-                    <TextView
-                        android:id="@+id/numFiesisTextView"
-                        android:layout_width="30dp"
-                        android:layout_height="match_parent"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:text="@string/num6"
-                        android:textAlignment="viewEnd"
-                        android:textColor="@android:color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-
-                    <Button
-                        android:id="@+id/fiesisButton"
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="serif"
-                        android:gravity="center_vertical"
-                        android:onClick="onClickFiesis"
-                        android:text="@string/fiesis"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="false"
-                        android:textSize="18sp"
-                        android:textStyle="bold|italic"
-                        android:typeface="serif"
-                        android:visibility="visible" />
-                </TableRow>
-
-            </TableLayout>
         </LinearLayout>
     </ScrollView>
 

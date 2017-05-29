@@ -7,13 +7,13 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar10"
+        android:id="@+id/toolbar16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="@string/rules" />
+        app:title="@string/empl" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,55 +34,53 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.8"
-                android:orientation="vertical"
-                android:weightSum="5">
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/docsB"
+                <TextView
+                    android:id="@+id/trud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/employeement"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/zadachititle"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:onClick="onClickDocs"
-                    android:text="@string/docs"
-                    android:textSize="18sp"
+                    android:text="@string/zadachititle"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
                     tools:ignore="NestedWeights" />
 
-                <Button
-                    android:id="@+id/postB"
+                <TextView
+                    android:id="@+id/zadachi"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:onClick="onClickPost"
-                    android:text="@string/post"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zadachi"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
-                <Button
-                    android:id="@+id/docs1B"
+                <TextView
+                    android:id="@+id/functitle"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:onClick="onClickDocs2"
-                    android:text="@string/docs1"
-                    android:textSize="18sp" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/functitle"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/entrB"
+                <TextView
+                    android:id="@+id/func"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:onClick="onClickEntries"
-                    android:text="@string/entrance"
+                    android:layout_height="wrap_content"
+                    android:text="@string/func"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
-
-                <Button
-                    android:id="@+id/minB"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:onClick="onClickEgeMin"
-                    android:text="@string/EGEmin"
-                    android:textSize="18sp" />
-
 
             </LinearLayout>
 
@@ -92,5 +90,4 @@
                 android:layout_weight="0.1" />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

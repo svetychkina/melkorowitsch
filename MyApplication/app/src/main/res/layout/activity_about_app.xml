@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="top|center"
-    android:orientation="vertical">
+    android:gravity="top"
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar6"
@@ -18,22 +19,31 @@
         android:theme="?attr/actionBarTheme"
         app:title="@string/about_app" />
 
-    <Space
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="306dp"
-        android:layout_height="295dp"
-        android:layout_gravity="center"
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
 
-        android:drawableTop="@drawable/blackphonelogo"
-        android:fontFamily="serif"
-        android:gravity="center"
-        android:text="@string/version"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|center_horizontal"
+
+            android:layout_weight="0.8"
+            android:drawableTop="@drawable/blackphonelogo"
+            android:gravity="center"
+            android:text="@string/version"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

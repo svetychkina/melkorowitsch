@@ -28,4 +28,14 @@ public class rulesActivity extends AppCompatActivity {
         Intent intent = new Intent(rulesActivity.this,docsActivity.class);
         startActivity(intent);
     }
+
+    public void onClickPost(View view) {
+        Intent intent = new Intent(rulesActivity.this,postActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickDocs2(View view) {
+        Intent intent = new Intent(rulesActivity.this,docs2Activity.class);
+        startActivity(intent);
+    }
 }

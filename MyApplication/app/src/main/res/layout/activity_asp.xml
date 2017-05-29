@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,13 +7,13 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar3"
+        android:id="@+id/toolbar18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="Куда поступить?" />
+        app:title="@string/aspir" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +26,7 @@
             android:weightSum="3">
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1" />
 
@@ -35,54 +34,30 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.8"
-                android:orientation="vertical"
-                android:weightSum="4">
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/bachButton"
+                <TextView
+                    android:id="@+id/whatasp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="onClickBach"
-                    android:text="@string/bach"
+                    android:text="@string/whatisasp"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:visibility="visible" />
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/magistrButton"
+                <TextView
+                    android:id="@+id/asp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="onClickMag"
-                    android:text="@string/magistr"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/aspirButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/aspir"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/extramButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/extram"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:visibility="visible" />
-
+                    android:text="@string/asp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1" />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

@@ -26,290 +26,305 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:weightSum="10">
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.8"
                 android:orientation="vertical"
-                android:weightSum="1.8">
+                android:weightSum="10">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.8"
+                    android:layout_weight="2"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:weightSum="1">
+                    android:weightSum="1.8"
+                    tools:ignore="NestedWeights">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/specTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/spec"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/specSpinner"
+                        style="@style/Widget.AppCompat.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_weight="1"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
                     <TextView
-                        android:id="@+id/specTextView"
+                        android:id="@+id/countTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center|end"
+                        android:text="@string/places_num"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/ouputTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/enterNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:labelFor="@+id/nameAutoCompleteTextView"
+                        android:text="@string/entername"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/nameAutoCompleteTextView"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:fontFamily="serif"
+                        android:completionHint="Фамилия Имя Отчество" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                        android:layout_gravity="center"
+
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="12dp"
+                            android:onClick="onCheckNotifs"
+                            app:srcCompat="?android:attr/listChoiceIndicatorSingle"
+                            tools:ignore="ContentDescription" />
+
+                        <Button
+                            android:id="@+id/showButton"
+
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_toEndOf="@+id/imageButton"
+                            android:fontFamily="casual"
+                            android:text="@string/show"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <Switch
+                            android:id="@+id/notificationSwitch"
+
+
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="14dp"
+                            android:layout_toEndOf="@+id/showButton"
+
+
+                            android:checked="true"
+                            android:gravity="center|end"
+                            android:text="@string/notification"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
                         android:gravity="center"
-                        android:text="@string/spec"
-                        android:textAlignment="center"
+                        android:text="@string/sort"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="italic"
                         android:typeface="serif" />
 
-                </LinearLayout>
-
-                <Spinner
-                    android:id="@+id/specSpinner"
-                    style="@style/Widget.AppCompat.Spinner"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_weight="1"
-                    android:spinnerMode="dialog" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:weightSum="2">
-
-                <TextView
-                    android:id="@+id/countTextView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
-                    android:gravity="center|end"
-                    android:text="@string/places_num"
-                    android:textAlignment="textEnd"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/ouputTextView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:orientation="vertical"
-                android:weightSum="2">
-
-                <TextView
-                    android:id="@+id/enterNameTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="0.8"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:labelFor="@+id/nameAutoCompleteTextView"
-                    android:text="@string/entername"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="italic" />
-
-                <AutoCompleteTextView
-                    android:id="@+id/nameAutoCompleteTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:completionHint="Фамилия Имя Отчество"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="5"
-                android:orientation="vertical"
-                android:weightSum="5">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-
-                    android:layout_gravity="center"
-
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/imageButton"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        android:onClick="onCheckNotifs"
-                        app:srcCompat="?android:attr/listChoiceIndicatorSingle" />
-
-                    <Button
-                        android:id="@+id/showButton"
-
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="13dp"
-                        android:layout_toEndOf="@+id/imageButton"
-                        android:fontFamily="casual"
-                        android:text="@string/show"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <Switch
-                        android:id="@+id/notificationSwitch"
-
-
-                        android:layout_width="170dp"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="14dp"
-                        android:checked="true"
-
-
-                        android:gravity="center|end"
-                        android:text="@string/notification"
-                        android:textSize="12sp"
-                        android:layout_toEndOf="@+id/showButton" />
-
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.8"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:text="@string/sort"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:textStyle="italic"
-                    android:typeface="serif" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <CheckBox
-                        android:id="@+id/egeCheckBox"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:text="@string/sort_ege" />
-
-                    <CheckBox
-                        android:id="@+id/contrCheckBox"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:text="@string/sort_contract" />
-
-                    <CheckBox
-                        android:id="@+id/agreeCheckBox"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:text="@string/sort_agreement" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1.4"
-                    android:orientation="vertical"
-                    android:weightSum="2.4">
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1.2"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:weightSum="3">
 
-                        <TextView
-                            android:id="@+id/textView14"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:gravity="center_vertical"
-                            android:text="@string/your_ege"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/textView13"
+                        <CheckBox
+                            android:id="@+id/egeCheckBox"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center"
-                            android:hint="@string/your_ege"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:checked="true"
+                            android:text="@string/sort_ege"
+                            tools:ignore="NestedWeights" />
+
+                        <CheckBox
+                            android:id="@+id/contrCheckBox"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/sort_contract" />
+
+                        <CheckBox
+                            android:id="@+id/agreeCheckBox"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/sort_agreement" />
+
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1.2"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
+                        android:layout_weight="1.4"
+                        android:orientation="vertical"
+                        android:weightSum="2.4">
 
-                        <TextView
-                            android:id="@+id/textView16"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:gravity="center_vertical"
-                            android:text="@string/your_range"
-                            android:textColor="@color/black"
-                            android:textSize="20sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            tools:ignore="NestedWeights">
 
-                        <TextView
-                            android:id="@+id/textView15"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:hint="@string/range_column"
-                            android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:text="@string/your_ege"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                tools:ignore="NestedWeights" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="@string/your_ege"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:text="@string/your_range"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="@string/range_column"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-        </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

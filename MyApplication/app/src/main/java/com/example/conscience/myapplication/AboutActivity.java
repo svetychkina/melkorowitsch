@@ -27,4 +27,9 @@ public class AboutActivity extends AppCompatActivity {
         Intent intent = new Intent(AboutActivity.this,studsActivity.class);
         startActivity(intent);
     }
+
+    public void onClickTrud(View view) {
+        Intent intent = new Intent(AboutActivity.this,trudActivity.class);
+        startActivity(intent);
+    }
 }

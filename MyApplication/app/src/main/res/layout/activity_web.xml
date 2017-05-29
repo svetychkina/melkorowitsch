@@ -45,14 +45,13 @@
                 android:layout_height="26dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="-3dp"
-                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Мы вконтакте"
                 android:textAlignment="center"
+                android:textAllCaps="false"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"
 
-                android:typeface="serif"
+                android:textSize="20sp"
                 app:layout_constraintLeft_toRightOf="@+id/imageButtonVK"
                 tools:layout_editor_absoluteY="56dp" />
         </LinearLayout>
@@ -87,13 +86,12 @@
                 android:layout_height="26dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="-3dp"
-                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Мы на facebook"
                 android:textAlignment="center"
+                android:textAllCaps="false"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:typeface="serif"
+                android:textSize="20sp"
                 app:layout_constraintLeft_toRightOf="@+id/imageButtonFB"
                 tools:layout_editor_absoluteY="152dp" />
 
@@ -129,13 +127,12 @@
                 android:layout_height="26dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="-3dp"
-                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Мы в twitter"
                 android:textAlignment="center"
+                android:textAllCaps="false"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:typeface="serif"
+                android:textSize="20sp"
                 app:layout_constraintLeft_toRightOf="@+id/imageButtonTwi"
                 tools:layout_editor_absoluteY="247dp" />
         </LinearLayout>
@@ -170,13 +167,12 @@
                 android:layout_height="26dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="-3dp"
-                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Мы на YouTube"
                 android:textAlignment="center"
+                android:textAllCaps="false"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:typeface="serif"
+                android:textSize="20sp"
                 app:layout_constraintLeft_toRightOf="@+id/imageButtonYT"
                 tools:layout_editor_absoluteY="349dp" />
         </LinearLayout>

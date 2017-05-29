@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,13 +7,13 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar3"
+        android:id="@+id/toolbar14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="Как поступить?" />
+        app:title="@string/docs1" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,37 +36,19 @@
                 android:layout_weight="2.8"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/rulesButton"
+                <TextView
+                    android:id="@+id/docslist2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:onClick="onClickRules"
-                    android:text="@string/rules"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:visibility="visible" />
-
-                <Button
-                    android:id="@+id/prepButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:onClick="onClickPrep"
-                    android:text="@string/prep"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:visibility="visible" />
-
+                    android:text="@string/docsList2"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <Space
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1" />
-
         </LinearLayout>
     </ScrollView>
-
-
 </LinearLayout>

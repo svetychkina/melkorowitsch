@@ -45,7 +45,12 @@
         <activity android:name=".rulesActivity" />
         <activity android:name=".EGEMinActivity" />
         <activity android:name=".entriesActivity" />
-        <activity android:name=".docsActivity"></activity>
+        <activity android:name=".docsActivity" />
+        <activity android:name=".postActivity" />
+        <activity android:name=".docs2Activity" />
+        <activity android:name=".trudActivity" />
+        <activity android:name=".magistrActivity" />
+        <activity android:name=".aspActivity"></activity>
     </application>
 
 </manifest>
