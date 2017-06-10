@@ -165,4 +165,30 @@ II корпус, 2 этаж, каб. 220\n
 2) заочная форма обучения с организацией основной части контактной работы обучающихся с преподавателем по выходным дням (далее – заочная форма обучения по выходным дням).\n\n
 Также в ННГАСУ реализуется очно-заочная форма обучения.\n</string>
 
+    <string name="_49500">49 500</string>
+    <string name="_32000">32 000</string>
+    <string name="_30000">30 000</string>
+    <string name="_50000">50 000</string>
+
+    <string name="specextratitle">ПЕРЕЧЕНЬ НАПРАВЛЕНИЙ ПОДГОТОВКИ\n</string>
+
+    <string name="PGS">Промышленное и гражданское строительство</string>
+    <string name="classic">классическая </string>
+    <string name="ochnozaoch">очно-заочная</string>
+
+    <string name="dayOff">выходного дня</string>
+
+    <string name="OTF">\nТеплогазоснабжение, вентиляция, водоснабжение и водоотведение зданий, сооружений, населенных пунктов</string>
+    <string name="manage">\nМЕНЕДЖМЕНТ</string>
+    <string name="mark">Маркетинг</string>
+
+    <string name="proManage">\nПроизводственный менеджмент</string>
+    <string name="nedvManage">\nМенеджмент недвижимости</string>
+    <string name="econ">\nЭКОНОМИКА</string>
+    <string name="buch">Бухгалтерский учет, анализ и аудит</string>
+    <string name="econOrg">\nЭкономика предприятий и организаций</string>
+    <string name="extLaw">\nЮРИСПРУДЕНЦИЯ</string>
+    <string name="noProf">без профиля</string>
+
+
 </resources>

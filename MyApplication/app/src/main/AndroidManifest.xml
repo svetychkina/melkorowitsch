@@ -50,7 +50,9 @@
         <activity android:name=".docs2Activity" />
         <activity android:name=".trudActivity" />
         <activity android:name=".magistrActivity" />
-        <activity android:name=".aspActivity"></activity>
+        <activity android:name=".aspActivity"/>
+        <activity android:name=".extramActivity"/>
+
     </application>
 
 </manifest>

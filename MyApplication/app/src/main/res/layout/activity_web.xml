@@ -37,6 +37,7 @@
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/colorAccent"
+                android:onClick="OnClickVK"
                 app:srcCompat="@drawable/vk" />
 
             <TextView

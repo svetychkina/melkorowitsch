@@ -46,6 +46,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "741295389546-hpf41d61sk57j8iq2dm7t65rq83h95m4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.conscience.myapplication",
+            "certificate_hash": "f0d1287e013fa9af18ab3eccd5fa6492cb2c3111"
+          }
+        },
+        {
           "client_id": "741295389546-3s3f33r5bktar6sosum3a8t6c5vf2p4t.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -60,8 +68,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741295389546-3s3f33r5bktar6sosum3a8t6c5vf2p4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
