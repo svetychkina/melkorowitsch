@@ -1,13 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
-
     <string name="action_settings">Settings</string>
-    <string name="num1">1</string>
-    <string name="num2">2</string>
-    <string name="num3">3</string>
-    <string name="num4">4</string>
-    <string name="num5">5</string>
-    <string name="num6">6</string>
     <string name="univ_info">Общая информация</string>
     <string name="profs">Руководство ННГАСУ</string>
     <string name="grads">Студенты ННГАСУ</string>
@@ -47,8 +40,7 @@
         Приёмная комиссия:\n8-831-280-84-45\n\n
         Режим работы:\n
         Пн-Пт: 9:00 – 16:00\n\n
-        Наша почта:\npriem@nngasu.ru\n
-    </string>
+        Наша почта:\npriem@nngasu.ru\n</string>
     <string name="spases_count">Количество мест:</string>
     <string name="sort">Ранжировать по:</string>
     <string name="sort_contract">договорам</string>
@@ -58,7 +50,6 @@
     <string name="popup">настроить уведомления</string>
     <string name="places">[бюджет|договор]</string>
     <string name="notification">уведомления</string>
-
     <string name="warning">Напоминание</string>
     <string name="check">Проверьте Ваш рейтинг</string>
     <string name="version">Абитуриент ННГАСУ 1.0</string>

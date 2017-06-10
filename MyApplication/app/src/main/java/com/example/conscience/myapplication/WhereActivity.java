@@ -16,6 +16,7 @@ public class WhereActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_where);
     }
 
+
     public void onClickBach(View view) {
         Intent intent = new Intent(WhereActivity.this, BachelorActivity.class);
         startActivity(intent);
