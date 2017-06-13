@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
-import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,22 +19,22 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.Iterator;
 
 
 public class RangeFormActivity extends AppCompatActivity
 implements CompoundButton.OnCheckedChangeListener {
+
+    //String[] bachList = new String[19];
 
     public static String LOG_TAG = "my_log";
     private static final int NOTIFY_ID=101;
@@ -88,12 +87,23 @@ implements CompoundButton.OnCheckedChangeListener {
             try {
                 dataJsonObj = new JSONObject(strjson);
                 JSONObject bach = dataJsonObj.getJSONObject("Очная");
+                Iterator<String> iterator = bach.keys();
+                while (iterator.hasNext()){
+                    String keys = iterator.next();
+
+                    //Arrays.fill(bachList, keys);
+                    //Log.d(LOG_TAG, Arrays.toString(bachList));
+
+                    Log.d(LOG_TAG, "keys: " + keys);
+                }
+
                 JSONObject spec = bach.getJSONObject("05.03.06 Экология и природопользование").getJSONObject("Экология и природопользование");
 
                 JSONObject regular = spec.getJSONObject("На общих основаниях").getJSONObject("Бюджет").getJSONObject("Нет ограничений");
                 plan = regular.getString("plan");
 
                 Log.d(LOG_TAG, "plan: " + plan);
+
 
                 /*for (int i = 0; i < friends.length(); i++) {
 
@@ -143,6 +153,8 @@ implements CompoundButton.OnCheckedChangeListener {
                 Toast toast = Toast.makeText(getApplicationContext(), "Вы выбрали "+selected[selPos], Toast.LENGTH_SHORT);
                 toast.show();
 
+                /*TextView plan = (TextView)findViewById(R.id.planTextView);
+                plan.setText(plan);*/
                 //воткнуть в текствью параметр из объекта в объекте в объекте в объекте каждого объекта в массиве жсон
                 //осталось_только_прихуярить_монитор.жпг
             }

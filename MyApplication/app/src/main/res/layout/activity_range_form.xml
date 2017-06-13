@@ -103,7 +103,7 @@
                         android:textSize="14sp" />
 
                     <TextView
-                        android:id="@+id/ouputTextView"
+                        android:id="@+id/planTextView"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
@@ -136,7 +136,7 @@
                     <AutoCompleteTextView
                         android:id="@+id/nameAutoCompleteTextView"
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="20dp"
                         android:layout_weight="1"
                         android:completionHint="Фамилия Имя Отчество" />
 
