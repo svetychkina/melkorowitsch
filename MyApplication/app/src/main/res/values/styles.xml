@@ -40,6 +40,7 @@
     <style name="spinnerItemStyle">
         <item name="android:padding">60dp</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="spinnerDropDownItemStyle">
