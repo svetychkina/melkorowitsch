@@ -43,7 +43,7 @@
         Наша почта:\npriem@nngasu.ru\n</string>
     <string name="spases_count">Количество мест:</string>
     <string name="sort">Ранжировать по:</string>
-    <string name="sort_contract">договорам</string>
+    <string name="sort_contract">договорам и согласиям</string>
     <string name="sort_ege">баллам ЕГЭ</string>
     <string name="fio_column">ФИО абитуриента</string>
     <string name="range_column">Рейтинг</string>
